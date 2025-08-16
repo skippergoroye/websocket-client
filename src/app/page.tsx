@@ -15,7 +15,7 @@ export default function Home() {
   const [connected, setConnected] = useState(false);
 
   useEffect(() => {
-    const newSocket: Socket = io("http://localhost:4000", {
+    const newSocket: Socket = io("https://websocket-server-p9av.onrender.com", {
       transports: ["websocket"],
     });
 
